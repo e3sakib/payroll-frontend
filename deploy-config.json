@@ -1,0 +1,39 @@
+{
+  "environments": {
+    "development": {
+      "apiUrl": "http://localhost:8080/api",
+      "production": false,
+      "enableDebug": true
+    },
+    "staging": {
+      "apiUrl": "https://staging-api.yourdomain.com/api",
+      "production": false,
+      "enableDebug": true
+    },
+    "production": {
+      "apiUrl": "https://api.yourdomain.com/api",
+      "production": true,
+      "enableDebug": false
+    }
+  },
+  "deployment": {
+    "githubPages": {
+      "enabled": true,
+      "branch": "gh-pages"
+    },
+    "firebase": {
+      "enabled": false,
+      "projectId": "your-firebase-project-id"
+    },
+    "netlify": {
+      "enabled": false,
+      "siteId": "your-netlify-site-id"
+    }
+  },
+  "build": {
+    "outputPath": "dist/client",
+    "optimization": true,
+    "sourceMap": false,
+    "extractCss": true
+  }
+}
